@@ -11,7 +11,7 @@ import { DefaultComponent } from './theme/default/default.component';
   declarations: [
     AppComponent,
     PageErrorComponent,
-    DefaultComponent
+    DefaultComponent,
   ],
   imports: [
     BrowserModule,
