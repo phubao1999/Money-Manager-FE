@@ -1,0 +1,52 @@
+@import "./variable.scss";
+
+.bg-main {
+  background-color: $headerBackGroud;
+  color: $mainText;
+}
+
+.d-flex {
+  display: flex;
+
+  &.space-between {
+    justify-content: space-between !important;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+}
+
+.to-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.p-05 {
+  padding: .5rem;
+}
+
+.py-05 {
+  padding: .5rem 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.header {
+  background-color: $headerBackGroud;
+}
