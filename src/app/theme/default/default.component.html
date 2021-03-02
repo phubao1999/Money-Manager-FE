@@ -6,7 +6,11 @@
         view_sidebar
       </span>
     </div>
-    <div class="info to-center"><button mat-raised-button (click)="logout()">Logout</button></div>
+    <div class="info to-center">
+      <!-- <img [src]="userInfo.photoUrl" alt="">
+      {{ userInfo.name }} -->
+      <button mat-raised-button (click)="logout()">Logout</button>
+    </div>
   </header>
   <div class="main d-flex">
     <div class="menu bg-main" [ngClass]="{ 'close-menu': !navOpen }">

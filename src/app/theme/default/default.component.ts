@@ -1,3 +1,4 @@
+import { AuthService } from './../../auth/auth.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { SocialAuthService } from 'angularx-social-login';
@@ -28,17 +29,17 @@ export class DefaultComponent implements OnInit {
     },
     {
       name: 'Remark',
-      icon: 'home',
-    },
-    {
-      name: 'Logout',
-      icon: 'home',
+      icon: 'task',
     },
   ];
+  userInfo;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private authService: AuthService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.userInfo = this.authService.getUserInfo();
+    console.log(this.userInfo);
+  }
 
   openNavbar() {
     this.navOpen = !this.navOpen;

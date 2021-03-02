@@ -17,12 +17,12 @@ header {
   width: 100%;
   height: calc(100vh - 50px);
   border-top: .5px solid $borderColor;
-  background-color: $contentBackGroud;
+  background-color: #ffffffeb;
 
   .menu {
     border-right: .5px solid $borderColor;
     padding: 20px 0;
-    color: #828282;
+    color: #ffffff;
     width: 30%;
     transition: all .5s ease;
 

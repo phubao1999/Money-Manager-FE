@@ -18,4 +18,8 @@ export class AuthService {
       localStorage.setItem('user', JSON.stringify(user));
     });
   }
+
+  getUserInfo() {
+    return JSON.parse(localStorage.getItem('user'));
+  }
 }
