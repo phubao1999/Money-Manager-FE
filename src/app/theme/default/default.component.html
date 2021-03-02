@@ -6,7 +6,7 @@
         view_sidebar
       </span>
     </div>
-    <div class="info to-center">Logout</div>
+    <div class="info to-center"><button mat-raised-button (click)="logout()">Logout</button></div>
   </header>
   <div class="main d-flex">
     <div class="menu bg-main" [ngClass]="{ 'close-menu': !navOpen }">

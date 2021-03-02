@@ -3,11 +3,13 @@ import { DefaultComponent } from './theme/default/default.component';
 import { PageErrorComponent } from './theme/page-error/page-error.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   {
     path: '',
     component: DefaultComponent,
+    canActivate: [AuthGuard],
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
   {
